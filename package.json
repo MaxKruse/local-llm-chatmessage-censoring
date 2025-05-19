@@ -8,25 +8,12 @@
 	},
 	"license": "MIT",
 	"author": {
-		"email": "maxkruse1996@gmail.com"
+		"email": "maxkruse1996@gmail.com",
+		"name": "Maximilian Kruse"
 	},
 	"type": "module",
-	"main": "lib/index.js",
-	"files": [
-		"LICENSE.md",
-		"README.md",
-		"lib/",
-		"package.json"
-	],
 	"scripts": {
-		"build": "tsup",
-		"format": "prettier .",
-		"lint": "eslint . --max-warnings 0",
-		"prepare": "husky",
-		"tsc": "tsc"
-	},
-	"lint-staged": {
-		"*": "prettier --ignore-unknown --write"
+		"start": "npx tsx src/main.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "9.22.0",
@@ -41,6 +28,9 @@
 	},
 	"packageManager": "pnpm@10.4.0",
 	"engines": {
-		"node": ">=18.3.0"
+		"node": ">=22.14.0"
+	},
+	"dependencies": {
+		"@lmstudio/sdk": "^1.1.1"
 	}
 }
